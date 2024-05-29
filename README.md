@@ -10,3 +10,5 @@ This is a simple Java project to demonstrate version management with Git.
 - Add a class of person, and started array in main class
 ## Version 1.2.3
 - Add a class to control persona, search by her ages
+## Version 1.2.3
+- Add a class to control persona, search by her ages
