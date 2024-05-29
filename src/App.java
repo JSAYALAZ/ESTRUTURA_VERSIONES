@@ -1,8 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.text.View;
+
 import Controllers.PersonController;
 import models.Persona;
+import views.PersonView;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -15,7 +18,9 @@ public class App {
         persona.add(new Persona("Viviana", 54));
         persona.add(new Persona("Paul", 76));
 
-        controller.searchPersonaByAges(persona, 32);
+        Persona personaEncontrada = controller.searchPersonaByAges(persona, 32);
+        PersonView view = new PersonView(personaEncontrada);
+        view.printName();
     }
 
     
