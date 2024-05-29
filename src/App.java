@@ -1,5 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import models.Persona;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        List<Persona> persona = new ArrayList<>();
+        persona.add(new Persona("Carlos", 12));
+        persona.add(new Persona("Paula", 14));
+        persona.add(new Persona("Steben", 42));
+        persona.add(new Persona("Josue", 32));
+        persona.add(new Persona("Viviana", 54));
+        persona.add(new Persona("Paul", 76));
     }
 }
